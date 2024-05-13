@@ -1,1 +1,2 @@
-
+class Tablero extends GameObject{
+}

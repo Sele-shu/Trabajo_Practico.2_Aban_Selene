@@ -1,1 +1,2 @@
-
+class Dado extends GameObject{
+}
