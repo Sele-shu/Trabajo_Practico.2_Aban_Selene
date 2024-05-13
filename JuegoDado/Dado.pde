@@ -10,4 +10,7 @@ class Dado extends Figura{
   void lanzar(){
     valor=int(random(1,caras+1));//simulacro del lanzamiento
   }
+  int obtenerValor(){
+    return valor;
+  }
 }
