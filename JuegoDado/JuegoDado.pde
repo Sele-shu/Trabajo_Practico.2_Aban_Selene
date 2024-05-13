@@ -11,4 +11,18 @@ public void setup(){
   tablero= new Tablero();
   tablero.Tablero(new PVector(50,50));
   dado= new Dado();
-  imagenes= new PImage[6]
+  imagenes= new PImage[6];
+  
+  int img= 0;
+  do{
+    imagenes[img] = loadImage("cara"+"img"+".png");
+    img++;
+  } while (img < imagenes.lenght);
+}
+
+public void draw(){
+  background(0);
+  tablero.display();
+  image(imagenes[dado.getIndiceImagen()],width/2,height/2,200,200);
+  imageMode(CENTER);
+}
